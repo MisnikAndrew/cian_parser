@@ -1,0 +1,536 @@
+{
+    "key": "defaultState",
+    "value": {
+        "offerData": {
+            "offer": {
+                "geo": {
+                    "highways": [
+                        {
+                            "name": "Новорязанское",
+                            "distance": 11,
+                            "url": "https://www.cian.ru/snyat-2-komnatnuyu-kvartiru-moskovskaya-oblast-novoryazanskoe-shosse-0620/",
+                            "id": 20
+                        },
+                        {
+                            "name": "Косинское",
+                            "distance": 6,
+                            "url": "https://www.cian.ru/snyat-2-komnatnuyu-kvartiru-moskovskaya-oblast-kosinskoe-shosse-06130/",
+                            "id": 130
+                        }
+                    ],
+                    "railways": [
+                        {
+                            "id": 784,
+                            "directionIds": [
+                                13
+                            ],
+                            "distance": "5.0",
+                            "time": 60,
+                            "name": "Люберцы I",
+                            "travelType": "byFoot"
+                        },
+                        {
+                            "id": 784,
+                            "directionIds": [
+                                13
+                            ],
+                            "distance": "5.0",
+                            "time": 8,
+                            "name": "Люберцы I",
+                            "travelType": "byCar"
+                        },
+                        {
+                            "id": 768,
+                            "directionIds": [
+                                13
+                            ],
+                            "distance": "5.0",
+                            "time": 62,
+                            "name": "Ухтомская",
+                            "travelType": "byFoot"
+                        },
+                        {
+                            "id": 792,
+                            "directionIds": [
+                                13
+                            ],
+                            "distance": "5.0",
+                            "time": 8,
+                            "name": "Люберцы II",
+                            "travelType": "byCar"
+                        },
+                        {
+                            "id": 792,
+                            "directionIds": [
+                                13
+                            ],
+                            "distance": "5.0",
+                            "time": 64,
+                            "name": "Люберцы II",
+                            "travelType": "byFoot"
+                        },
+                        {
+                            "id": 768,
+                            "directionIds": [
+                                13
+                            ],
+                            "distance": "6.0",
+                            "time": 10,
+                            "name": "Ухтомская",
+                            "travelType": "byCar"
+                        }
+                    ],
+                    "undergrounds": [
+                        {
+                            "id": 373,
+                            "name": "Некрасовка",
+                            "lineColor": "DB0A5B",
+                            "travelType": "walk",
+                            "travelTime": 20,
+                            "url": "https://www.cian.ru/snyat-2-komnatnuyu-kvartiru-moskva-metro-nekrasovka/",
+                            "underConstruction": false
+                        },
+                        {
+                            "id": 372,
+                            "name": "Лухмановская",
+                            "lineColor": "DB0A5B",
+                            "travelType": "transport",
+                            "travelTime": 5,
+                            "url": "https://www.cian.ru/snyat-2-komnatnuyu-kvartiru-moskva-metro-luhmanovskaya/",
+                            "underConstruction": false
+                        },
+                        {
+                            "id": 371,
+                            "name": "Улица Дмитриевского",
+                            "lineColor": "DB0A5B",
+                            "travelType": "transport",
+                            "travelTime": 7,
+                            "url": "https://www.cian.ru/snyat-2-komnatnuyu-kvartiru-moskva-metro-ulica-dmitrievskogo/",
+                            "underConstruction": false
+                        }
+                    ]
+                },
+                "flatType": "rooms",
+
+                "loggiasCount": 0,
+                "balconiesCount": 0,
+                "windowsViewType": "yard",
+                "separateWcsCount": 1,
+                "combinedWcsCount": 1,
+                "repairType": "euro",
+                "hasPhone": false,
+                "hasFridge": true,
+                "hasDishwasher": true,
+                "hasWasher": true,
+                "hasFurniture": true,
+                "hasKitchenFurniture": true,
+                "hasConditioner": false,
+                "hasTv": true,
+                "hasInternet": true,
+                "hasBathtub": true,
+                "hasShower": false,
+                "hasLift": false,
+                "specialty": {
+                    "types": [],
+                    "additionalTypes": []
+                },
+                "isNeedHideExactAddress": false,
+                "areaParts": [],
+                "roomsCount": 2,
+                "floorNumber": 12,
+                "bargainTerms": {
+                    "price": 70000,
+                    "priceType": "all",
+                    "currency": "rur",
+                    "paymentPeriod": "monthly",
+                    "leaseTermType": "longTerm",
+                    "prepayMonths": 1,
+                    "deposit": 70000,
+                    "utilitiesTerms": {
+                        "includedInPrice": true,
+                        "price": 0,
+                        "flowMetersNotIncludedInPrice": true
+                    },
+                    "includedOptions": [],
+                    "clientFee": 0,
+                    "agentFee": 0,
+                    "prices": {
+                        "rur": 70000,
+                        "usd": 677,
+                        "eur": 643
+                    },
+                    "depositPrices": {
+                        "rur": 70000,
+                        "usd": 677,
+                        "eur": 643
+                    },
+                    "utilitiesTermsPrices": {
+                        "rur": 0,
+                        "usd": 0,
+                        "eur": 0
+                    },
+                    "tags": []
+                },
+                "building": {
+                    "materialType": "monolith",
+                    "floorsCount": 18,
+                    "buildYear": 2022,
+                    "ceilingHeight": "2.7",
+                    "totalArea": "60.0",
+                    "liftTypes": [],
+                    "cranageTypes": [],
+                    "cargoLiftsCount": 3,
+                    "houseMaterialType": "monolith"
+                },
+                "editDate": "2024-12-17T10:43:16.550000+00:00",
+                "humanizedEditDate": "сегодня, 10:43",
+                "isInHiddenBase": false,
+                "isObjectHidden": false,
+                "isClosedVisibility": false,
+                "videos": [],
+                "demolishedInMoscowProgramm": false,
+                "exportLinks": {
+                    "pdfUrl": "/export/pdf/rent/flat/311366629/",
+                    "docxUrl": "/export/docx/rent/flat/311366629/"
+                },
+                "cargoLiftsCount": 3,
+                "added": "сегодня, 10:43",
+                "valueAddedServices": {
+                    "isStandard": false,
+                    "isTop3": false,
+                    "isPremium": false
+                },
+                "categoriesIds": [
+                    1000,
+                    1100,
+                    1110,
+                    1111
+                ],
+                "publicationDate": 1734421378,
+                "creationDate": "2024-12-17T10:42:58.23",
+                "recoveryLink": "/razmestit-obyavlenie/311366629/",
+                "isFromBuilder": false,
+                "isFromSeller": false,
+                "isFromLeadFactory": false,
+                "trackingData": {
+                    "moId": 0,
+                    "oblId": 1,
+                    "cityId": 1,
+                    "fbRegion": "Москва",
+                    "fbCity": "Москва"
+                },
+                "editPhoto": "/realty/add2.aspx?id=311366629",
+                "newEdit": "/razmestit-obyavlenie/?realty_id=311366629",
+                "certificate": "https://www.cian.ru/newobjects/cian/certification/get?announcementId=311366629",
+                "edit": "/realty/add1.aspx?id=311366629",
+                "similarOffersLink": "",
+                "similarOffersCount": 0,
+                "buildersIds": [
+                    17754
+                ],
+                "isImported": false,
+                "userConfirmedFix": false,
+                "newbuilding": {
+                    "id": "4117304",
+                    "name": "мой адрес На Вертолетчиков",
+                    "house": {
+                        "isReliable": false,
+                        "isFinished": true,
+                        "finishDate": {
+                            "quarter": 3,
+                            "year": 2022
+                        },
+                        "id": 8055523,
+                        "name": "Дом 21 Корпус 3"
+                    },
+                    "isFromDeveloper": false,
+                    "isFromBuilder": false,
+                    "isFromSeller": false,
+                    "isFromLeadFactory": false,
+                    "showJkReliableFlag": false,
+                    "isFichering": false,
+                    "isFicheringPlus": false,
+                    "isPremium": false,
+                    "newbuildingFeatures": {
+                        "imagesCount": 10,
+                        "firstImageUrl": "https://images.cdn-cian.ru/images/41/981/041/moy-adres-na-vertoletchikov-moskva-jk-1401891497-6.jpg",
+                        "videosCount": 0,
+                        "deadlineInfo": "Сдан"
+                    },
+                    "isReliable": false,
+                    "isTariffPremium": false
+                },
+                "timezone": 3,
+                "isEnabledCallTracking": true,
+                "callTrackingProvider": "beeline",
+                "isRentByParts": false,
+                "isDuplicate": false,
+                "userTrust": "notInvolved",
+                "userTrustLevel": "notInvolved",
+                "showWarningMessage": false,
+                "moderationInfo": {
+                    "showContactWarningMessage": false
+                },
+                "isUnique": false,
+                "isUniqueForCian": false,
+                "isUniqueCheckDate": "2024-12-16",
+                "isCianPartner": false,
+                "isIllegalConstruction": false,
+                "externalOfferUrl": "",
+                "cianLayouts": null
+            },
+            "newObject": {
+                "newbuildingFeatures": {
+                    "imagesCount": 10,
+                    "firstImageUrl": "https://images.cdn-cian.ru/images/41/981/041/moy-adres-na-vertoletchikov-moskva-jk-1401891497-6.jpg",
+                    "videosCount": 0,
+                    "reviewsCount": 0,
+                    "hasProgressOfConstructions": false
+                },
+                "id": 4117304,
+                "name": "мой адрес На Вертолетчиков",
+                "url": "/zhiloy-kompleks-moy-adres-na-vertoletchikov-moskva-4117304/",
+                "status": "Сдан",
+                "developer": {
+                    "id": 17754,
+                    "url": "/zastroishchik-sz-upravlenie-krupnomasshtabnykh-proektov-17754/",
+                    "name": "СЗ Управление крупномасштабных проектов",
+                    "logoUrl": "/api/get-company-logo/?id=17754&rnd=482329",
+                    "stats": {
+                        "progress": {
+                            "qs": "builder=17754&deal_type=sale&engine_version=2&offer_type=newobject&status%5B0%5D=5002"
+                        },
+                        "done": {
+                            "text": "4 дома в 1 ЖК",
+                            "qs": "builder=17754&deal_type=sale&engine_version=2&offer_type=newobject&show_old_newobjects=1&status%5B0%5D=5004"
+                        }
+                    }
+                },
+                "roomsInfo": [],
+                "hasLayoutImageOffers": false,
+                "fullUrlWithSubdomain": "https://zhk-moy-adres-na-vertoletchikov-i.cian.ru/",
+                "advantages": [
+                    {
+                        "advantageType": "Courtyard",
+                        "characteristics": [],
+                        "images": [
+                            {
+                                "url": "https://images.cdn-cian.ru/images/72/981/041/1401892758-1.jpg"
+                            }
+                        ],
+                        "title": "Внутренний двор",
+                        "description": "На придомовой территории установлены современные детские игровые комплексы и спортивные тренажеры."
+                    },
+                    {
+                        "advantageType": "Architecture",
+                        "characteristics": [],
+                        "images": [
+                            {
+                                "url": "https://images.cdn-cian.ru/images/33/981/041/1401893349-1.jpg"
+                            },
+                            {
+                                "url": "https://images.cdn-cian.ru/images/33/981/041/1401893377-1.jpg"
+                            }
+                        ],
+                        "title": "Архитектура",
+                        "description": "Стильное оформление в соответствии с последними трендами в архитектуре"
+                    }
+                ],
+                "specifications": [
+                    {
+                        "title": "Класс",
+                        "value": "Комфорт"
+                    },
+                    {
+                        "title": "Тип дома",
+                        "value": "Панельный, монолитный"
+                    },
+                    {
+                        "title": "Парковка",
+                        "value": "Гостевая"
+                    },
+                    {
+                        "title": "Отделка",
+                        "value": "Без отделки"
+                    },
+                    {
+                        "title": "Тип комплекса",
+                        "value": "Жилой комплекс",
+                        "valueTooltipText": "Один или несколько многоквартирных домов, объединённых общей территорией и инфраструктурой."
+                    }
+                ],
+                "promoInfos": [],
+                "decorations": [
+                    {
+                        "description": "В квартире имеются несущие межквартирные стены. Межкомнатные перегородки и электрическая разводка отсутствуют.\nВыполнено остекление окон, установлена входная дверь, часто осуществлена разводка труб отопления и установлены радиаторы, подведены инженерные коммуникации (трубы холодного и горячего водоснабжения, канализация, электрическая сеть), имеется общедомовая вентиляция.",
+                        "images": [
+                            {
+                                "thumbnailUrl": "https://static.cdn-cian.ru/frontend/feedteam/upload/images/newbuildings/3d/3b/f4d8e042617493c48a61e6d35f09.jpeg",
+                                "url": "https://static.cdn-cian.ru/frontend/feedteam/upload/images/newbuildings/5d/94/21ae7a5be698b78739f71861ee44.jpeg"
+                            },
+                            {
+                                "thumbnailUrl": "https://static.cdn-cian.ru/frontend/feedteam/upload/images/newbuildings/75/fb/e4e477dcbcd7dbd3995e37670412.jpeg",
+                                "url": "https://static.cdn-cian.ru/frontend/feedteam/upload/images/newbuildings/16/59/bb0d21610bc850ada9e820cbf5a7.jpeg"
+                            },
+                            {
+                                "thumbnailUrl": "https://static.cdn-cian.ru/frontend/feedteam/upload/images/newbuildings/a2/2d/342833965c53d5c0c5f07bfb1d86.jpeg",
+                                "url": "https://static.cdn-cian.ru/frontend/feedteam/upload/images/newbuildings/db/11/9a00d7e6ff41dcb8a78727ce8c96.jpeg"
+                            }
+                        ],
+                        "shortDescription": "",
+                        "title": "Без отделки",
+                        "type": "without",
+                        "housesIds": [
+                            8055524,
+                            8055525,
+                            8055523,
+                            8055526
+                        ],
+                        "searchUrl": "https://cian.ru/cat.php?deal_type=sale&offer_type=flat&engine_version=2&object_type[0]=2&from_developer=1&newobject[0]=4117304&decorations_list[0]=without"
+                    }
+                ],
+                "gaLabel": "/sale/jk/mo_id=0/obl_id=1/city_id=1/object_type=2/ga_obj_type=0/spec=none/4117304/from_developer=1/nv=0/",
+                "nearbyNewbuildingsMapUrl": "//cian.ru/map/?deal_type=sale&engine_version=2&zoom=12&with_newobject=1&newbuildings_search=true&region=1&center=55.712067382378,37.9298133697273"
+            },
+            "bti": {
+                "houseData": {
+                    "yearRelease": 2022,
+                    "houseMaterialType": "monolith",
+                    "floorMax": 18,
+                    "entrances": 1,
+                    "flatCount": 170,
+                    "isEmergency": false,
+                    "demolishedInMoscowProgramm": false,
+                    "houseHeatSupplyType": "central",
+                    "houseOverhaulFundType": "unknown",
+                    "houseGasSupplyType": "unknown",
+                    "houseOverlapType": "concrete",
+                    "lifts": 3
+                }
+            },
+            "factoids": [
+                {
+                    "title": "Общая площадь",
+                    "icon": "https://images.cdn-cian.ru/imgmobile/icons/offer_card/size.svg",
+                    "value": "60 м²"
+                },
+                {
+                    "title": "Жилая площадь",
+                    "icon": "https://images.cdn-cian.ru/imgmobile/icons/offer_card/plan.svg",
+                    "value": "30 м²"
+                },
+                {
+                    "title": "Площадь кухни",
+                    "icon": "https://images.cdn-cian.ru/imgmobile/icons/offer_card/kitchen.svg",
+                    "value": "20 м²"
+                },
+                {
+                    "title": "Этаж",
+                    "icon": "https://images.cdn-cian.ru/imgmobile/icons/offer_card/floor.svg",
+                    "value": "12 из 18"
+                },
+                {
+                    "title": "Год постройки",
+                    "icon": "https://images.cdn-cian.ru/imgmobile/icons/offer_card/build_year.svg",
+                    "value": "2022"
+                }
+            ],
+            "sidebar": [
+                {
+                    "title": "Оплата ЖКХ",
+                    "value": "включена (без счётчиков)"
+                },
+                {
+                    "title": "Залог",
+                    "value": "70 000 ₽"
+                },
+                {
+                    "title": "Комиссии",
+                    "value": "нет"
+                },
+                {
+                    "title": "Предоплата",
+                    "value": "1 месяц"
+                },
+                {
+                    "title": "Срок аренды",
+                    "value": "от года"
+                },
+                {
+                    "title": "Условия проживания",
+                    "value": "можно с детьми"
+                }
+            ],
+            "features": [
+                {
+                    "title": "О квартире",
+                    "id": "aboutFlat",
+                    "features": [
+                        {
+                            "value": "60",
+                            "label": "Общая площадь"
+                        },
+                        {
+                            "value": "30",
+                            "label": "Жилая площадь"
+                        },
+                        {
+                            "value": "20",
+                            "label": "Площадь кухни"
+                        },
+                        {
+                            "value": "2,7 м",
+                            "label": "Высота потолков"
+                        },
+                        {
+                            "value": "1 совмещенный, 1 раздельный",
+                            "label": "Санузел"
+                        },
+                        {
+                            "value": "Во двор",
+                            "label": "Вид из окон"
+                        },
+                        {
+                            "value": "Евроремонт",
+                            "label": "Ремонт"
+                        }
+                    ]
+                },
+                {
+                    "title": "О доме",
+                    "id": "aboutBuilding",
+                    "features": [
+                        {
+                            "value": "2022",
+                            "label": "Год постройки"
+                        },
+                        {
+                            "value": "3 грузовых",
+                            "label": "Количество лифтов"
+                        },
+                        {
+                            "value": "Монолитный",
+                            "label": "Тип дома"
+                        },
+                        {
+                            "value": "Железобетонные",
+                            "label": "Тип перекрытий"
+                        },
+                        {
+                            "value": "1",
+                            "label": "Подъезды"
+                        },
+                        {
+                            "value": "Центральное",
+                            "label": "Отопление"
+                        },
+                        {
+                            "value": "Нет",
+                            "label": "Аварийность"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
