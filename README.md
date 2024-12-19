@@ -20,9 +20,12 @@
 
 # Запуск в докере
 1. Клонировать репозиторий https://github.com/MisnikAndrew/cian_parser.git <br>
-2. Запустить ./run_docker.sh <br>
+2. Открыть терминал <br>
+3. Запустить ./run_docker.sh <br>
 4. Зайти в диалог с @CianParsingScoringBot <br>
-5. Ввести команду /start и заполнить нужные значения. <br>
+5. Ввести команду /start и заполнить нужные значения. <br><br>
+
+
 
 
 # Описание файлов
