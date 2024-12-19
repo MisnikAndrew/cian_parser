@@ -7,7 +7,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 from utils.report_utils import build_report
 
-TOKEN = "6697778482:AAGLpW7jaU9SSkT1jytRXiqhjlfqcVcRbdg"
+TOKEN = "8188415318:AAG-pRqM4vhL_o5IvGcptB-K9ZHe13Qy53Y"
 first_sleep = 2
 sleep_interval = 2
 
