@@ -115,7 +115,7 @@ async def process_flat_count(msg: types.Message, state: FSMContext):
 
 @dp.message_handler(content_types=['text'])
 async def get_text_messages(msg: types.Message):
-    await msg.answer(f'Вы ввели \"{msg.text.lower()}\", но я не уметь воспринимать такие сообщени. Введите /start или /report')
+    await msg.answer(f'Вы ввели \"{msg.text.lower()}\", но я не уметь воспринимать такие сообщения. Введите /start или /report')
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
