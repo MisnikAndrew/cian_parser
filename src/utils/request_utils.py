@@ -3,11 +3,11 @@ import time
 import random
 
 
-try_early = 3.0
+try_early = 0.25
 retry_early = 60.0
-try_late = 35.0
+try_late = 0.25
 retry_early = 45.0
-retry_prob = 0.05
+retry_prob = 0.02
 
 def get_sleep_time(retry, request_it):
     if request_it < 10 and retry == False:
@@ -32,17 +32,15 @@ def get_wait_time(iters):
 def poll_request(url: str, request_it):
     sleep_interval = 1.0
     response = requests.get(url)
-    if request_it < 15:
-        time.sleep(get_sleep_time(False, request_it))
+    time.sleep(get_sleep_time(False, request_it))
     while response.status_code == 500 or 'rate_limit' in response.text:
         if response.status_code == 500:
             print('got 500 status, trying more')
         elif 'rate_limit' in response.text:
             print('rate limited, trying more')
-        if request_it < 15:
-            time.sleep(get_sleep_time(True, request_it) * sleep_interval)
-            sleep_interval *= 1.5
-            response = requests.get(url)
+        time.sleep(get_sleep_time(True, request_it) * sleep_interval)
+        sleep_interval *= 1.5
+        response = requests.get(url)
     return response
 
 def create_url_from_params(min_cost, max_cost, room1, room2, room3, room4, limit, page, min_area, max_area, sort):

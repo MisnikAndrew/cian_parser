@@ -78,7 +78,7 @@ async def process_min_area(msg: types.Message, state: FSMContext):
         min_area = int(msg.text)
         await state.update_data(min_area=min_area)
 
-        await msg.reply("Введите количество квартир (например, 3). Желательно указывать не больше 5-7 квартир. (Из-за ограничений CIAN API получение большого количества квартир может быть долгим)")
+        await msg.reply("Введите количество квартир (например, 10). Из-за ограничений CIAN API получение большого количества квартир может быть долгим.")
         await Form.flat_count.set()
     except ValueError:
         await msg.reply("Пожалуйста, введите целое числовое значение для минимальной площади.")
