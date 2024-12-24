@@ -2,12 +2,12 @@ import requests
 import time
 import random
 
-
+timing = 0.2
 try_early = 0.25
 retry_early = 60.0
 try_late = 0.25
 retry_early = 45.0
-retry_prob = 0.02
+retry_prob = 0.01
 
 def get_sleep_time(retry, request_it):
     if request_it < 10 and retry == False:
@@ -20,7 +20,7 @@ def get_sleep_time(retry, request_it):
         return retry_early
 
 def get_wait_time(iters):
-    ans = 0.0
+    ans = timing * iters
     for it in range(iters):
         ans += get_sleep_time(False, it + 1)
         rnd = random.random()
