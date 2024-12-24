@@ -1,17 +1,48 @@
 import requests
 import time
+import random
 
-def poll_request(url: str, first_sleep, sleep_interval):
+
+try_early = 3.0
+retry_early = 60.0
+try_late = 35.0
+retry_early = 45.0
+retry_prob = 0.05
+
+def get_sleep_time(retry, request_it):
+    if request_it < 10 and retry == False:
+        return try_early
+    if request_it < 10 and retry == True:
+        return retry_early
+    if request_it >= 10 and retry == False:
+        return try_late
+    if request_it >= 10 and retry == True:
+        return retry_early
+
+def get_wait_time(iters):
+    ans = 0.0
+    for it in range(iters):
+        ans += get_sleep_time(False, it + 1)
+        rnd = random.random()
+        while rnd < retry_prob:
+            ans += get_sleep_time(True, it + 1)
+            rnd = random.random()
+    return ans
+
+def poll_request(url: str, request_it):
+    sleep_interval = 1.0
     response = requests.get(url)
-    time.sleep(first_sleep)
+    if request_it < 15:
+        time.sleep(get_sleep_time(False, request_it))
     while response.status_code == 500 or 'rate_limit' in response.text:
         if response.status_code == 500:
             print('got 500 status, trying more')
         elif 'rate_limit' in response.text:
             print('rate limited, trying more')
-        time.sleep(sleep_interval)
-        sleep_interval *= 1.5
-        response = requests.get(url)
+        if request_it < 15:
+            time.sleep(get_sleep_time(True, request_it) * sleep_interval)
+            sleep_interval *= 1.5
+            response = requests.get(url)
     return response
 
 def create_url_from_params(min_cost, max_cost, room1, room2, room3, room4, limit, page, min_area, max_area, sort):

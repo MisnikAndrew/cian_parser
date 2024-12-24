@@ -8,7 +8,7 @@ from utils.scoring_utils import get_flat_score
 from utils.string_utils import find_line_with_substring, write_as_text, get_values_from_object
 
 
-def build_report(min_cost, max_cost, min_room, max_room, overall_limit, min_area, first_sleep, sleep_interval):
+def build_report(min_cost, max_cost, min_room, max_room, overall_limit, min_area):
     room1 = 0
     room2 = 0
     room3 = 0
@@ -62,7 +62,10 @@ def build_report(min_cost, max_cost, min_room, max_room, overall_limit, min_area
 
     cnt = 0
     result = ''
+    disp_result = ''
     found = {}
+
+    request_it = 0
 
     stop = False
 
@@ -70,7 +73,8 @@ def build_report(min_cost, max_cost, min_room, max_room, overall_limit, min_area
         if stop == True:
             break
         url = create_url_from_params(min_cost, max_cost, room1, room2, room3, room4, limit, page + 1, min_area, max_area, sort)
-        response = poll_request(url, first_sleep, sleep_interval)
+        request_it += 1
+        response = poll_request(url, request_it)
         soup = BeautifulSoup(response.text, 'html.parser')
         apartments = soup.find_all('div', {'data-name': 'LinkArea'})
 
@@ -80,7 +84,8 @@ def build_report(min_cost, max_cost, min_room, max_room, overall_limit, min_area
             href = apartments[i].find('a', {'class': '_93444fe79c--link--eoxce'})["href"]
             if href not in found.keys():
                 found[href] = 'true'
-                response = poll_request(href, first_sleep, sleep_interval)
+                request_it += 1
+                response = poll_request(href, request_it)
 
                 substring = "window._cianConfig['frontend-offer-card']"
                 prefix_str = "window._cianConfig['frontend-offer-card'] = (window._cianConfig['frontend-offer-card'] || []).concat("
@@ -110,6 +115,8 @@ def build_report(min_cost, max_cost, min_room, max_room, overall_limit, min_area
                     print('done: ' + str(cnt) + ' / ' + str(min(len(apartments) // 2 * page_number, overall_limit)))
 
                 result += write_as_text(cnt, values)
+                if (cnt <= 3):
+                    disp_result += write_as_text(cnt, values)
                 for key in lists.keys():
                     lists[key].append(values.get(key, ''))
 
@@ -117,7 +124,13 @@ def build_report(min_cost, max_cost, min_room, max_room, overall_limit, min_area
                     stop = True
                     break
     dataframe = pd.DataFrame(lists)
-    file_path = 'report_table.csv'
-    dataframe.to_csv(file_path)
-    file = InputFile(file_path)
-    return result, file
+    csv_file_path = 'report_table.csv'
+    dataframe.to_csv(csv_file_path)
+    csv_file = InputFile(csv_file_path)
+
+    txt_file_path = 'report.txt'
+    with open(txt_file_path, 'w') as txt_file:
+        txt_file.write(result)
+    txt_file = InputFile(txt_file_path)
+
+    return disp_result, csv_file, txt_file
