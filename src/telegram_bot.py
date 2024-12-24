@@ -98,13 +98,13 @@ async def process_flat_count(msg: types.Message, state: FSMContext):
     if flat_count <= max_flat_count:
         await msg.reply(
             f'\
-    Минимальная стоимость: {min_cost}\n\
-    Максимальная стоимость: {max_cost}\n\
-    Минимальное количество комнат: {min_room}\n\
-    Максимальное количество комнат: {max_room}\n\
-    Минимальная площадь: {min_area}\n\
-    Количество квартир: {flat_count}\n\
-    Начинаю строить отчет, время ожидания ~{get_wait_time(flat_count)} секунд')
+Минимальная стоимость: {min_cost}\n\
+Максимальная стоимость: {max_cost}\n\
+Минимальное количество комнат: {min_room}\n\
+Максимальное количество комнат: {max_room}\n\
+Минимальная площадь: {min_area}\n\
+Количество квартир: {flat_count}\n\
+Начинаю строить отчет, время ожидания ~{get_wait_time(flat_count)} секунд')
         try:
             report, csv_file, txt_file = build_report(min_cost, max_cost, min_room, max_room, flat_count, min_area)
             if flat_count > 3:
